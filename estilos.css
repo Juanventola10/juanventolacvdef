@@ -1,0 +1,359 @@
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Estilos del modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #333;
+}
+
+body.dark-mode footer {
+    background-color: #333;
+}
+
+/* Botón de modo oscuro */
+.dark-mode-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Aseguramos que el body y html ocupen todo el alto disponible */
+html, body {
+    height: 100%; /* Ocupa toda la altura de la pantalla */
+    margin: 0; /* Elimina márgenes predeterminados */
+    display: flex; /* Usamos flexbox para la disposición */
+    flex-direction: column; /* Coloca los elementos uno debajo del otro (header, main, footer) */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: coral;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+    flex-wrap: wrap;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+
+}
+
+nav a:hover {
+    color: white
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #ededed;
+    background-image: url(imagenes/fondoblanco.jpeg);
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center center; /* Centra la imagen en la pantalla */
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    color: #ededed;
+}
+
+.inflex {
+    flex: 1;
+    min-width: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inflex :first-child {
+    flex: 2;
+    padding: 25px;
+    background-color: coral;
+    margin: 20px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.inflex div {
+    padding: 25px;
+    background-color: coral;
+    margin: 20px;
+    font-weight: 600;
+
+}
+
+.homeDP {
+    display: flex;
+    color: #ededed;
+}
+
+.inflexDP {
+    flex: 1;
+    min-width: 250px;
+    color: #ededed;
+}
+
+.inflexDP :first-child {
+    flex: 2;
+    padding: 25px;
+    background-color: coral;
+    margin: 20px;
+    color: #ededed;
+    font-weight: 600;
+}
+.Nomber{
+    color: black;
+}
+
+.inflexDP div {
+    padding: 25px;
+    background-color: coral;
+    margin: 20px;
+    font-weight: 1000;
+    color: #ededed;
+    font-size: 20px;
+
+}
+.boxsk{
+    height: 200px;
+    width: 230px;
+    background-color: coral;
+    margin: 10px;
+    margin-top: 50px;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    color: #ededed;
+}
+.tituloskills{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.SKILLSLETTER{
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.boxdp{
+    height: 200px;
+    width: 230px;
+    background-color: coral;
+    margin: 10px;
+    margin-top: 50px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ededed;
+
+}
+.SKILLSA{
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+}
+
+
+
+
+ 
+.boxex{
+    height: 200px;
+    width: 230px;
+    background-color: coral;
+    margin: 20px;
+    margin-top: 50px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ededed;
+    border-radius: 10px;        /* Redondea las esquinas de la caja */
+
+}
+
+.boxxp{
+    height: 500px;
+    width: 530px;
+    background-color: coral;
+    margin: 10px;
+    margin-top: 50px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ededed;
+    border-radius: 10px;        /* Redondea las esquinas de la caja */
+
+}
+.boxxpuno{
+    height: 500px;
+    width: 530px;
+    background-color: coral;
+    margin: 10px;
+    margin-top: 50px;
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ededed;
+    border-radius: 10px;        /* Redondea las esquinas de la caja */
+
+}
+
+.portfoliobox {
+    height: 50px;
+    width: 530px;
+    background-color: coral;
+    margin: 382px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ededed;
+    border-radius: 10px;        /* Redondea las esquinas de la caja */
+   
+}
+.boxct{
+    height: 200px;
+    width: 230px;
+    background-color: coral;
+    margin: 80px;
+    margin-top: 50px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ededed;
+    border-radius: 10px;        /* Redondea las esquinas de la caja */
+
+}
+
+ footer {
+    background-color: coral; /* Color de fondo */
+    color: #0c0c0c;
+    text-align: center; /* Alineación de texto */
+    font-size: small; /* Tamaño de la fuente */
+    padding: 20px 0; /* Espaciado alrededor del footer */
+}
+footer {
+    margin-top: auto; /* Esto empuja el footer hacia el final */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    nav {
+        flex-direction: column; 
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    nav a {
+        padding: 5px 0; 
+    }
+
+    ul li {
+        display: block; 
+        padding: 10px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 50px; /
+    }
+}

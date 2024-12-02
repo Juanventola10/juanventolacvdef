@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<script>
+    window.onload = function () {
+        // Muestra un mensaje de bienvenida
+        alert("Bienvenido a mi Portfolio!");
+
+        // Aplicar un fade-in al título
+        let title = document.querySelector('.home h1');
+        title.style.opacity = 0; // Inicia con el título invisible
+        title.style.transition = "opacity 2s ease-in"; // Define el tiempo de transición
+
+        setTimeout(function () {
+            title.style.opacity = 1; 
+        }, 1000); 
+
+        // Configuración para el modo oscuro
+        const modeToggle = document.getElementById('dark-mode-toggle');
+        modeToggle.addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        // Aplicar el modo oscuro si estaba guardado en localStorage
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+    }
+</script>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/IMG_5667.jpeg" alt="logoimagen">
+            <h2 class="Nomber">Juan Ventola</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="datos_personales.html">DATOS PERSONALES </a></li>
+                <li><a href="skills.html">SKILLS</a> </li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="experiencia.html">EXPERIENCIA</a> </li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Botón de modo oscuro debajo del nav -->
+    <div class="mode-toggle-container">
+        <button id="dark-mode-toggle" class="dark-mode-toggle">Modo Oscuro</button>
+    </div>
+
+    <main>
+        <section class="home">
+            <div class="inflex">
+                <h1 class="jvdds">JUAN VENTOLA, DESARROLLO DE SOFTWARE.</h1>
+            </div>
+            <div class="inflex">
+                <div>
+                    Un poco sobre mi...
+                </div>
+
+                <div>
+                    Soy un joven estudiante con un enfoque proactivo y perseverante,
+                    características que me han permitido avanzar en mi formación y adquirir habilidades técnicas de manera
+                    efectiva. Me considero una persona paciente y resolutiva, siempre dispuesta a enfrentar desafíos y
+                    encontrar soluciones creativas a los problemas.
+
+                    Actualmente, trabajo en una empresa de publicidad en el sector administrativo, donde he desarrollado
+                    competencias en la organización de proyectos, manejo de datos y atención al cliente. Esta experiencia
+                    laboral me ha brindado una visión integral del funcionamiento empresarial y la importancia de la
+                    comunicación efectiva en cualquier equipo de trabajo.
+
+                    Estoy entusiasmado por aplicar mis conocimientos en programación y mis habilidades interpersonales en un
+                    entorno dinámico, contribuyendo al desarrollo de soluciones innovadoras y fortaleciendo mis capacidades
+                    en el campo del software.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h1>Juan Ventola ©</h1>
+    </footer>
+
+</body>
+
+</html>
